@@ -1,0 +1,68 @@
+[theme]
+primaryColor = "#4A90A4"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F8F9FA"
+textColor = "#1E3A5F"
+font = "sans serif"
+
+[server]
+maxUploadSize = 10
+
+[browser]
+gatherUsageStats = false
+```
+
+4. Scroll down and click **"Commit new file"**
+
+### 4c. Verify Your Files
+Your repository should now show:
+```
+brca2-classifier/
+├── .streamlit/
+│   └── config.toml
+├── app.py
+└── requirements.txt
+```
+
+---
+
+## Step 5: Deploy to Streamlit Cloud
+
+Streamlit Cloud is a FREE service that runs your Python app and gives you a web address.
+
+### 5a. Go to Streamlit Cloud
+1. Open a new browser tab
+2. Go to **https://share.streamlit.io**
+
+### 5b. Sign In with GitHub
+1. Click **"Continue with GitHub"** (or "Sign in" then GitHub)
+2. A popup will ask you to authorize Streamlit
+3. Click **"Authorize streamlit"**
+4. You might need to enter your GitHub password
+
+### 5c. Create Your App
+1. Once signed in, click the **"New app"** button (usually blue, top-right area)
+2. Fill in the form:
+
+| Field | What to Enter |
+|-------|---------------|
+| **Repository** | Select `yourusername/brca2-classifier` from dropdown |
+| **Branch** | `main` (should be default) |
+| **Main file path** | `app.py` |
+
+3. **Optional:** Click "Advanced settings" if you want a custom URL
+4. Click the **"Deploy!"** button
+
+### 5d. Wait for Deployment
+1. You'll see a screen with a spinning/baking animation 🍳
+2. This takes **2-5 minutes** - don't close the browser!
+3. You can watch the logs on the right side
+4. When it's done, your app will appear!
+
+---
+
+## Step 6: 🎉 Your App is Live!
+
+Once deployed, you'll get a URL like:
+```
+https://yourusername-brca2-classifier.streamlit.app
